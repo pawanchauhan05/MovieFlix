@@ -9,7 +9,7 @@ App demonstrating Clean Architecture using Coroutines and Android Jetpack Compon
 - search movie by movie title
 
 ### ScreenShots
-<img src = "https://github.com/pawanchauhan05/MovieFlix/blob/dev/screenshots/movie_listing.jpeg" width = 260 height = 550/> <img src = "https://github.com/pawanchauhan05/MovieFlix/blob/dev/screenshots/movie_details.jpeg" width = 260 height = 550/> <img src = "https://github.com/pawanchauhan05/MovieFlix/blob/dev/screenshots/movie_search.jpeg" width = 260 height = 550/> <img src = "https://github.com/pawanchauhan05/MovieFlix/blob/dev/screenshots/swipe_to_delete.jpeg" width = 260 height = 550/>
+<img src = "https://github.com/pawanchauhan05/MovieFlix/blob/dev/screenshots/movie_listing.jpeg" width = 260 height = 550/> <img src = "https://github.com/pawanchauhan05/MovieFlix/blob/dev/screenshots/movie_details.jpeg" width = 260 height = 550/> <img src = "https://github.com/pawanchauhan05/MovieFlix/blob/dev/screenshots/movie_search.jpeg" width = 260 height = 550/> <img src = "https://github.com/pawanchauhan05/MovieFlix/blob/dev/screenshots/swipe_to_delete.jpeg" width = 260 height = 550/> <img src = "https://github.com/pawanchauhan05/MovieFlix/blob/dev/screenshots/local_caching_and_error_msg.jpeg" width = 260 height = 550/> <img src = "https://github.com/pawanchauhan05/MovieFlix/blob/dev/screenshots/no_internet.jpeg" width = 260 height = 550/>
 
 ### Tech-Stack
 
