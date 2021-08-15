@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MovieFlix</string>
+    <string name="timeout_error">TIMEOUT ERROR!</string>
+    <string name="no_internet">NO INTERNET!</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="movie_has_beed_removed">Movie has been removed</string>
+    <string name="no_movies_found">No Movies Found</string>
+    <string name="movie_details">Movie Details</string>
+    <string name="release_date">Release Date : %1$s</string>
+</resources>
