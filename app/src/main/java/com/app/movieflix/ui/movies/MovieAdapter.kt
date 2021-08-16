@@ -20,27 +20,26 @@ class MovieAdapter(var list: MutableList<Movie>, private val onItemClicked: (Mov
     private val POPULAR_MOVIE = 1
     private val UN_POPULAR_MOVIE = 2
 
-    inner class PopularViewHolder(private val containerView: View, onItemClicked: (Int) -> Unit) :
+    inner class PopularViewHolder(private val containerView: View) :
         RecyclerView.ViewHolder(containerView) {
 
         init {
             itemView.setOnClickListener {
-                onItemClicked(adapterPosition)
+                onItemClicked(list[layoutPosition])
             }
         }
 
         fun bind(movie: Movie) {
             Utility.loadImage(Utility.getCachingType(), itemView.imageViewMovie, "${Config.BACKDROP_IMAGE_PATH}${movie.backdrop_path}")
-            itemView.setOnClickListener { onItemClicked(movie) }
         }
     }
 
-    inner class UnPopularViewHolder(private val containerView: View, onItemClicked: (Int) -> Unit) :
+    inner class UnPopularViewHolder(private val containerView: View) :
         RecyclerView.ViewHolder(containerView) {
 
         init {
             itemView.setOnClickListener {
-                onItemClicked(adapterPosition)
+                onItemClicked(list[layoutPosition])
             }
         }
 
@@ -48,7 +47,6 @@ class MovieAdapter(var list: MutableList<Movie>, private val onItemClicked: (Mov
             Utility.loadImage(Utility.getCachingType(), itemView.imageViewMovie, "${Config.POSTER_IMAGE_PATH}${movie.poster_path}")
             itemView.textViewTitle.text = movie.title
             itemView.textViewOverview.text = movie.overview
-            itemView.setOnClickListener { onItemClicked(movie) }
         }
     }
 
@@ -60,14 +58,14 @@ class MovieAdapter(var list: MutableList<Movie>, private val onItemClicked: (Mov
                 viewHolder = UnPopularViewHolder(
                     LayoutInflater.from(parent.context)
                         .inflate(R.layout.unpopular_movie_list_item_layout, parent, false)
-                ) { onItemClicked }
+                )
             }
 
             POPULAR_MOVIE -> {
                 viewHolder = PopularViewHolder(
                     LayoutInflater.from(parent.context)
                         .inflate(R.layout.popular_movie_list_item_layout, parent, false)
-                ) { onItemClicked }
+                )
             }
         }
 
